@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+<listeners>
+<listener class-name="com.sd.testLayer.LoginPageTest"/>
+<listener class-name="com.sd.testLayer.VerifyProductPage"/>
+</listeners>
+  <test thread-count="5" name="RegressionTest">
+    <classes>
+      <class name="com.sd.testBase.TestBase"/>
+      <class name="com.sd.testLayer.VerifyProductPage"/>
+      <class name="com.sd.testLayer.LoginPageTest"/>
+    </classes>
+  </test> <!-- RegressionTest -->
+</suite> <!-- RegressionSuite -->
